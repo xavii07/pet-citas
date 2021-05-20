@@ -1,13 +1,176 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --blanco: #e1e1e1;
+  --negro:#222;
+  --aqua: rgb(19, 197, 241);
+  --titulo: 'Anton', sans-serif;
+  --texto: 'Balsamiq Sans', cursive;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-size: 14px;
+  height: 100vh;
+  width: 100%;
+  background: #141E30;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, rgba(36, 59, 85, 0.8), rgba(20, 30, 48, 0.8)), url(./img/pexels.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, rgba(36, 59, 85, 0.8), rgba(20, 30, 48, 0.8)), url(./img/pexels.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  font-family: var(--texto);
 }
+
+h1, h2, h3, h4  {
+  color: var(--blanco);
+  font-family: var(--titulo);
+  padding: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+}
+
+.citas {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5rem;
+}
+
+.citas__container {
+  width: 80%; 
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type=submit]{
+  color:var(--negro);
+  background-color: var(--aqua);
+  transition: all 0.5s ease;
+}
+
+input[type=submit]:hover {
+  background-color:var(--negro);
+  color:var(--aqua);
+}
+
+label {
+  color: rgb(164, 173, 162);
+}
+
+textarea {
+  height: 200px;
+}
+
+.alerta-error {
+  background-color: var(--negro);
+  color: var(--aqua);
+  padding: 0.5rem;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  text-align: center;
+} 
+
+.cita {
+  background: var(--blanco);
+  border-bottom: 1px solid var(--blanco);
+  color: var(--negro);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+.cita p {
+  font-weight: bold;
+  margin-bottom: .6rem;
+}
+
+.cita p span {
+  font-weight: normal;
+}
+
+.cita__dealta {
+  background-color: #46a72e;
+  color: var(--blanco);
+  margin: 0.5rem auto;
+}
+
+.cita__dealta:hover {
+  background-color: var(--blanco);
+  color:#46a72e;
+  border:1px solid #46a72e;
+  outline: none;
+}
+
+
+/*============================
+--------MEDIA QUERIES--------
+=============================*/
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 16px;
+    background: #141E30;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, rgba(36, 59, 85, 0.8), rgba(20, 30, 48, 0.8)), url(./img/pexels-g.jpeg);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, rgba(36, 59, 85, 0.8), rgba(20, 30, 48, 0.8)), url(./img/pexels-g.jpeg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+
+  .citas__container {
+    width: 90%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  
+  .citas__citas-turno {
+    width: 48%;
+  }
+
+  .citas__form {
+    width: 45%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.4rem;
+  }
+ 
+}
+
+
+@media screen and (min-width: 992px) {
+  
+  .citas__container {
+    width: 70%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.6rem;
+  }
+ 
+}
+
+
