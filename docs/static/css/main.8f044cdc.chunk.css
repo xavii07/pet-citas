@@ -1,0 +1,188 @@
+:root {
+    --blanco: #e1e1e1;
+    --negro: #222;
+    --aqua: #13c5f1;
+    --titulo: "Anton", sans-serif;
+    --texto: "Balsamiq Sans", cursive
+}
+
+body {
+    font-size: 14px;
+    height: 100vh;
+    width: 100%;
+    background: #141e30;
+    background: linear-gradient(180deg, rgba(36, 59, 85, .8), rgba(20, 30, 48, .8)), url(../media/pexels.f1710c09.jpeg);
+    background-position: 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family: "Balsamiq Sans", cursive;
+    font-family: var(--texto)
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #e1e1e1;
+    color: var(--blanco);
+    font-family: "Anton", sans-serif;
+    font-family: var(--titulo);
+    padding: 1rem 0;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+h1 {
+    font-size: 1.5rem
+}
+
+h2 {
+    font-size: 1.2rem
+}
+
+.citas {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5rem
+}
+
+.citas__container {
+    width: 80%;
+    margin: 0 auto;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column
+}
+
+input[type=submit] {
+    color: #222;
+    color: var(--negro);
+    background-color: #13c5f1;
+    background-color: var(--aqua);
+    transition: all .5s ease
+}
+
+input[type=submit]:hover {
+    background-color: #222;
+    background-color: var(--negro);
+    color: #13c5f1;
+    color: var(--aqua)
+}
+
+label {
+    color: #a4ada2
+}
+
+textarea {
+    height: 200px
+}
+
+.alerta-error {
+    background-color: #222;
+    background-color: var(--negro);
+    color: #13c5f1;
+    color: var(--aqua);
+    padding: .5rem;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    font-size: .8rem;
+    text-align: center
+}
+
+.cita {
+    background: #e1e1e1;
+    background: var(--blanco);
+    border-bottom: 1px solid #e1e1e1;
+    border-bottom: 1px solid var(--blanco);
+    color: #222;
+    color: var(--negro);
+    padding: 1rem;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-bottom: 1rem
+}
+
+.cita p {
+    font-weight: 700;
+    margin-bottom: .6rem
+}
+
+.cita p span {
+    font-weight: 400
+}
+
+.cita__dealta {
+    background-color: #46a72e;
+    color: #e1e1e1;
+    color: var(--blanco);
+    margin: .5rem auto
+}
+
+.cita__dealta:hover {
+    background-color: #e1e1e1;
+    background-color: var(--blanco);
+    color: #46a72e;
+    border: 1px solid #46a72e;
+    outline: none
+}
+
+@media screen and (min-width:768px) {
+    body {
+        font-size: 16px;
+        background: #141e30;
+        background: linear-gradient(180deg, rgba(36, 59, 85, .8), rgba(20, 30, 48, .8)), url(../media/pexels-g.f414fd2d.jpeg);
+        background-attachment: fixed;
+        background-repeat: no-repeat
+    }
+
+    .citas__container {
+        width: 90%;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -webkit-justify-content: space-between;
+        justify-content: space-between;
+        -webkit-align-items: center;
+        align-items: center
+    }
+
+    .citas__citas-turno {
+        width: 48%
+    }
+
+    .citas__form {
+        width: 45%
+    }
+
+    input {
+        width: 100%
+    }
+
+    h1 {
+        font-size: 1.8rem
+    }
+
+    h2 {
+        font-size: 1.4rem
+    }
+}
+
+@media screen and (min-width:992px) {
+    .citas__container {
+        width: 70%
+    }
+
+    h1 {
+        font-size: 2rem
+    }
+
+    h2 {
+        font-size: 1.6rem
+    }
+}
+
+/*# sourceMappingURL=main.8f044cdc.chunk.css.map */
